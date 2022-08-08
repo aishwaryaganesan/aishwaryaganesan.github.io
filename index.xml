@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aishwarya Ganesan on Aishwarya Ganesan</title>
+    <link>http://pages.cs.wisc.edu/~ag/</link>
+    <description>Recent content in Aishwarya Ganesan on Aishwarya Ganesan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0500</lastBuildDate>
+    <atom:link href="/~ag/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>My Talk Name</title>
+      <link>http://pages.cs.wisc.edu/~ag/talk/my-talk-name/</link>
+      <pubDate>Sun, 13 May 2018 13:12:25 -0500</pubDate>
+      
+      <guid>http://pages.cs.wisc.edu/~ag/talk/my-talk-name/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Protocol-Aware Recovery for Consensus-Based Storage</title>
+      <link>http://pages.cs.wisc.edu/~ag/publication/ctrl/</link>
+      <pubDate>Sun, 11 Feb 2018 00:00:00 -0600</pubDate>
+      
+      <guid>http://pages.cs.wisc.edu/~ag/publication/ctrl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Redundancy Does Not Imply Fault Tolerance: Analysis of Distributed Storage Reactions to File-System Faults</title>
+      <link>http://pages.cs.wisc.edu/~ag/publication/cords_tos/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 -0500</pubDate>
+      
+      <guid>http://pages.cs.wisc.edu/~ag/publication/cords_tos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Redundancy Does Not Imply Fault Tolerance: Analysis of Distributed Storage Reactions to Single Errors and Corruptions</title>
+      <link>http://pages.cs.wisc.edu/~ag/publication/cords_login/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 -0500</pubDate>
+      
+      <guid>http://pages.cs.wisc.edu/~ag/publication/cords_login/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Redundancy Does Not Imply Fault Tolerance: Analysis of Distributed Storage Reactions to Single Errors and Corruptions</title>
+      <link>http://pages.cs.wisc.edu/~ag/publication/cords/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 -0600</pubDate>
+      
+      <guid>http://pages.cs.wisc.edu/~ag/publication/cords/</guid>
+      <description>&lt;p&gt;#&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Aaaaaaa this is fantastic work &lt;a href=&#34;https://t.co/otNLPDt00R&#34;&gt;https://t.co/otNLPDt00R&lt;/a&gt;&lt;/p&gt;&amp;mdash; Bear Conditioning (@aphyr) &lt;a href=&#34;https://twitter.com/aphyr/status/839471405796319232?ref_src=twsrc%5Etfw&#34;&gt;March 8, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+#&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;What &lt;a href=&#34;https://twitter.com/aphyr?ref_src=twsrc%5Etfw&#34;&gt;@aphyr&lt;/a&gt;&amp;#39;s Jepsen.io did for partition tolerance, CORDS does for fs fault tolerance : break all the datastores! &lt;a href=&#34;https://t.co/uszOHIBXk2&#34;&gt;https://t.co/uszOHIBXk2&lt;/a&gt; &lt;a href=&#34;https://t.co/BKSJns0mbv&#34;&gt;pic.twitter.com/BKSJns0mbv&lt;/a&gt;&lt;/p&gt;&amp;mdash; Adrian Colyer (@adriancolyer) &lt;a href=&#34;https://twitter.com/adriancolyer/status/839393002158194692?ref_src=twsrc%5Etfw&#34;&gt;March 8, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+#&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;The datastore developer&amp;#39;s nightmare continues: after Jepsen, here comes CORDS... &lt;a href=&#34;https://t.co/uszOHIBXk2&#34;&gt;https://t.co/uszOHIBXk2&lt;/a&gt; &lt;a href=&#34;https://t.co/HhEoa8SfZ1&#34;&gt;pic.twitter.com/HhEoa8SfZ1&lt;/a&gt;&lt;/p&gt;&amp;mdash; Adrian Colyer (@adriancolyer) &lt;a href=&#34;https://twitter.com/adriancolyer/status/839518601078001664?ref_src=twsrc%5Etfw&#34;&gt;March 8, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+#&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;what happens to distributed systems when there are IO errors? &lt;a href=&#34;https://t.co/wURSluxGoZ&#34;&gt;https://t.co/wURSluxGoZ&lt;/a&gt;&lt;/p&gt;&amp;mdash; 🔎Julia Evans🔍 (@b0rk) &lt;a href=&#34;https://twitter.com/b0rk/status/839441480460734465?ref_src=twsrc%5Etfw&#34;&gt;March 8, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Correlated Crash Vulnerabilities</title>
+      <link>http://pages.cs.wisc.edu/~ag/publication/pace/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 -0500</pubDate>
+      
+      <guid>http://pages.cs.wisc.edu/~ag/publication/pace/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Demo: Tracking User Browsing on a Demo Floor</title>
+      <link>http://pages.cs.wisc.edu/~ag/publication/thirdeye_demo/</link>
+      <pubDate>Mon, 01 Sep 2014 00:00:00 -0500</pubDate>
+      
+      <guid>http://pages.cs.wisc.edu/~ag/publication/thirdeye_demo/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/5Mzni1lUxIQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34; title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Enabling Physical Analytics in Retail Stores using Smart Glasses</title>
+      <link>http://pages.cs.wisc.edu/~ag/publication/thirdeye/</link>
+      <pubDate>Mon, 01 Sep 2014 00:00:00 -0500</pubDate>
+      
+      <guid>http://pages.cs.wisc.edu/~ag/publication/thirdeye/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/5Mzni1lUxIQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34; title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>
