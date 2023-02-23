@@ -140,19 +140,77 @@
 
 <h3>Consensus in Practice</h3>
 <ul>
+<li>Bolosky, William J., Dexter Bradshaw, Randolph B. Haagens, Norbert P. Kusters, and Peng Li.  <a href='https://www.usenix.org/legacy/event/nsdi11/tech/full_papers/Bolosky.pdf'>Paxos Replicated State Machines as the Basis of a High-Performance Data Store.</a> NSDI 11. 2011.</li>
+<li>Tushar D Chandra, Robert Griesemer, and Joshua Redstone. Paxos Made Live: An Engineering Perspective. PODC 07.</li>
  <li>Mike Burrows. <a href='papers/chubby-osdi06.pdf' rel='nofollow'>The Chubby Lock Service for Loosely-Coupled Distributed Systems</a>. OSDI 2006.</li>
-   <li>Bolosky, William J., Dexter Bradshaw, Randolph B. Haagens, Norbert P. Kusters, and Peng Li.  <a href='https://www.usenix.org/legacy/event/nsdi11/tech/full_papers/Bolosky.pdf'>Paxos Replicated State Machines as the Basis of a High-Performance Data Store.</a> NSDI 11. 2011.</li>
    <li class = "nobullet"><i>Optional: </i> <ul>
      <li>Patrick Hunt, Mahadev Konar, Flavio Paiva Junqueira, and Benjamin Reed. <a href='papers/Hunt.pdf' rel='nofollow'>ZooKeeper: Wait-free Coordination for Internet-scale Systems.</a> In USENIX annual technical conference (ATC), 2010.</li>
    </ul>
 </li>
 </ul>
  
+ <h3>Byzantine</h3>
+<ul>
+   <li>L. Lamport, R. Shostak, and M. Pease. <a href='papers/byzantine-generals.pdf' rel='nofollow'>The Byzantine Generals Problem</a>. ACM Transactions on Programming Languages and Systems, July 1982, pages 382-401.</li>
+  <li>Miguel Castro and Barbara Liskov. <a href='papers/osdi99.pdf' rel='nofollow'>Practical Byzantine Fault Tolerance</a>. OSDI, 1999.
+  <li class = "nobullet"><i>Optional: </i> <ul>
+    <li> Ramakrishna Kotla, Lorenzo Alvisi, Mike Dahlin, Allen Clement, and Edmund Wong. <a  href='papers/kotla07zyzzyva.pdf' rel='nofollow'>Zyzzyva: Speculative Byzantine Fault Tolerance</a>. SOSP 2007.</li>
 
-
+  </li></ul>
 </ul>
 
+<h3>Distributed transactions</h3>
+<ul>
+  <li>Butler Lampson, and David B. Lomet. <a href='papers/lampson-2pc.pdf' rel='nofollow'>A new presumed commit optimization for two phase commit</a>. VLDB. Vol. 93. 1993.</li>
+  <li>Corbett et al. <a href='papers/spanner-osdi2012.pdf' rel='nofollow'> Spanner: Google's Globally-Distributed Database</a>. OSDI 2012.</li>
+  <li class = "nobullet"><i>Optional: </i> <ul>
+    <li> Irene Zhang, Naveen Kr. Sharma, Adriana Szekeres, Arvind Krishnamurthy, and Dan R. K. Ports. <a  href='papers/tapir-sosp15.pdf' rel='nofollow'>Building Consistent Transactions with Inconsistent Replication</a>. SOSP 2015.
+  </li></ul>
+</ul>
 
+<h3>Consistency models</h3>
+<ul>
+  <li>Douglas Terry. <a href='papers/baseball-13.pdf' rel='nofollow'>Replicated data consistency explained through baseball</a>. Communications of the ACM, Dec 2013. </li> 
+  <li>Eric Brewer.  <a href='papers/PODC-keynote.pdf' rel='nofollow'>CAP Theorem</a>. PODC Keynote, 2000.</li>
+  <li>Viotti, P. and Vukolić, M., 2016. Consistency in non-transactional distributed storage systems. ACM Computing Surveys (CSUR), 49(1), pp.1-34.</li>
+
+<li class = "nobullet"><b>Linearizability: </b> <ul>
+    <li>Maurice P. Herlihy, and Jeannette M. Wing. "Linearizability: A correctness condition for concurrent objects." ACM Transactions on Programming Languages and Systems (TOPLAS) 12, no. 3 (1990): 463-492.</li>
+  <li>Collin Lee, Seo Jin Park, Ankita Kejriwal, Satoshi Matsushita, and John Ousterhout. <a href='papers/rifl.pdf' rel='nofollow'>Implementing Linearizability at Large Scale and Low Latency</a>. In Proceedings of the 25th Symposium on Operating Systems Principles (SOSP), 2015.</li>
+</ul>
+</li>
+<li class = "nobullet"><b>Causal consistency: </b> <ul>
+    <li>Wyatt Lloyd, Michael J. Freedman, Michael Kaminsky, and David G. Andersen. <a href='papers/cops-sosp2011.pdf' rel='nofollow'>Don't settle for eventual: scalable causal consistency for wide-area storage with COPS</a>. In Proceedings of the Twenty-Third ACM Symposium on Operating Systems Principles (SOSP), 2011.</li>
+  <li>Syed Akbar Mehdi, Cody Littley, Natacha Crooks, Lorenzo Alvisi, Nathan Bronson, and Wyatt Lloyd. <a href='papers/occult.pdf' rel='nofollow'>I can't believe it's not causal! scalable causal consistency with no slowdown cascades</a>. In 14th USENIX Symposium on Networked Systems Design and Implementation (NSDI 17), 2017.</li>
+</ul>
+</li>
+<li class = "nobullet"><b>Eventual consistency: </b> <ul>
+  <li>Terry et al. <a href='papers/terry95managing.pdf' rel='nofollow'>Managing update conflicts in Bayou, a weakly connected replicated storage system</a>. SOSP, 1995.</li>
+    <li> Lu et al. <a href='papers/240-lu.pdf' rel='nofollow'>Existential consistency: measuring and understanding consistency at Facebook.</a> In Proceedings of the 25th Symposium on Operating Systems Principles (SOSP), 2015.</li>
+    <li>Giuseppe DeCandia, Deniz Hastorun, Madan Jampani, Gunavardhan Kakulapati, Avinash Lakshman, Alex Pilchin, Swami Sivasubramanian, Peter Vosshall and Werner Vogels. <a href='papers/amazon-dynamo-sosp2007.pdf' rel='nofollow'>Dynamo: Amazon's Highly Available Key-Value Store</a>. Proceedings of the 21st ACM Symposium on Operating Systems Principles, Stevenson, WA, October 2007 </li>
+
+  </ul>
+  </li>
+<li class = "nobullet"><b>Read your writes</b> <ul>
+  <li> Xiao Shi, Scott Pruett, Kevin Doherty, Jinyu Han, Dmitri
+Petrov, Jim Carrig, John Hugg, and Nathan Bronson.
+Flighttracker: Consistency across read-optimized online
+stores at facebook. </li>
+
+  </li></ul>
+</ul>
+
+<h3>Student presentations</h3>
+<h4>Geo-replication, Leaderless, Multi-threaded execution</h4>
+<ul>
+ <li>Iulian Moraru, David G. Andersen, and Michael Kaminsky. <a href='papers/epaxos.pdf' rel='nofollow'>There is more consensus in egalitarian parliaments.</a> In Proceedings of the Twenty-Fourth ACM Symposium on Operating Systems Principles (SOSP), 2013.</li>
+<li> Manos Kapritsos, Yang Wang, Vivien Quema, Allen Clement, Lorenzo Alvisi, and Mike Dahlin. 2012. All About Eve: Execute-verify Replication for Multi-core Servers. OSDI 12.</li>
+</ul>
+
+<h4>Shared logs</h4>
+<ul>
+<li>Joshua Lockerman, Jose M. Faleiro, Juno Kim, Soham Sankaran, Daniel J. Abadi, James Aspnes, Siddhartha Sen, and Mahesh Balakrishnan. 2018. The FuzzyLog: A Partially Ordered Shared Log. OSDI 18. </li>
+ <li>Mahesh Balakrishnan et al. <a href='https://www.usenix.org/system/files/osdi20-balakrishnan.pdf' rel='nofollow'>Virtual Consensus in Delos. OSDI 2020.</a></li>
 </ul>
       </div>
     </div>
