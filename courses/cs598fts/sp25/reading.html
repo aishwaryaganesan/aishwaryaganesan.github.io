@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.38.2" />
+  <meta name="theme-color" content="#3f51b5">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Playfair&#43;Display:400,700%7cFauna&#43;One">
+  <link rel="stylesheet" href="styles.css">
+  <meta property="og:locale" content="en-us">
+  <title>CS 598 FTS Spring 2025</title>
+</head>
+
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71" >
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container" style="width:95%">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="">CS 598FTS: Fault-tolerant and consistent data center systems</a>
+    </div>
+    <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+        
+        <li class="nav-item">
+          <a href="index.html#about" data-target="index.html#about">
+                    <span>Course Description</span>
+                  </a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html#prereq" data-target="index.html#prereq">
+                    <span>Prerequisites</span>
+                  </a>
+        </li>
+	<li class="nav-item">
+          <a href="index.html#grading" data-target="index.html#grading">
+                    <span>Grading</span>
+                  </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="schedule.html" data-target="schedule.html">
+                    <span>Schedule</span>
+                  </a>
+        </li>
+        <li class="nav-item">
+          <a href="reading.html" data-target="reading.html" style="color: rgba(255,255,255,1);">
+                    <span>Reading List</span>
+                  </a>
+        </li>
+        <li class="nav-item">
+          <a href="projects.html" data-target="projects.html">
+                    <span>Projects</span>
+                  </a>
+        </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<span id="homepage" style="display: none"></span>
+
+
+
+<section id="reading" class="home-section" style="padding: 50px 0 50px 0;">
+    <div class="container" style="width:95%">
+      
+  <div class="col-xs-12 col-md-2 section-heading">
+     <h2>Reading List</h2>
+  </div>
+<div class="row">
+  <div class="col-xs-12 col-md-9">
+    <div class="row">
+        <div class="col-xs-12">
+
+          <h3>Ordering</h3>
+<ul>
+  <li>L. Lamport. <a href='papers/lamport-clocks.pdf' rel='nofollow'>Time, Clocks, and the Ordering of Events in a Distributed System</a>. Communications of the ACM, July 1978, pages 558-564.</li>
+  
+  <li class = "nobullet"><i>Optional: </i> <ul>
+    <li>Friedemann Mattern. <a href='papers/mattern89.pdf' rel='nofollow'>Virtual Time and Global States of Distributed Systems</a>. 1988.</li>
+    <li>M. Chandy and L. Lamport. <a href='papers/snapshots.pdf' rel='nofollow'>Distributed Snapshots: Determining Global States of Distributed Systems</a>. ACM Trans. Comput. Syst., 3(1):63-75, 1985.</li>
+  </ul></li>
+</ul>
+
+<h3>Consensus</h3>
+<ul>
+  <li>Leslie Lamport. <a href='papers/paxos-simple-Copy.pdf' rel='nofollow'>Paxos Made Simple</a>. ACM SIGACT News, 2001.</li>
+  <li>Diego Ongaro and John Ousterhout. <a href='papers/raft.pdf' rel='nofollow'>In Search of an Understandable Consensus Algorithm (Extended Version)</a>. In 2014 USENIX Annual Technical Conference (ATC 14), 2014.</li>
+  <li> Barbara Liskov and James Cowling.  <a href='papers/vr-revisited.pdf' rel='nofollow'>Viewstamped replication revisited</a>. 2012. </li>
+  <li class = "nobullet"><i>Optional: </i> <ul>
+    <li>Michael J. Fischer, Nancy A. Lynch, and Michael S. Paterson. 1985. <a href='papers/flp.pdf' rel='nofollow'>Impossibility of distributed consensus with one faulty process.</a> J. ACM 32, 2 (April 1985), 374–382. </li>
+    <li>Fred B. Schneider. <a href='papers/SMSurvey.pdf' rel='nofollow'> Implementing fault-tolerant services using the state machine approach: A tutorial</a>. ACM Computing Surveys (CSUR) 22.4 (1990): 299-319.</li>
+    <li>Navin Budhiraja, Keith Marzullo, Fred B. Schneider, and Sam Toueg. <a href='papers/92-1265.pdf' rel='nofollow'>Optimal Primary-Backup Protocols</a>. International Workshop on Distributed Algorithms. Springer, Berlin, Heidelberg, 1992.</li>
+   </ul>
+</li>
+</ul>
+
+<h3>Paxos optimizations</h3>
+<ul>
+ <li>Aishwarya Ganesan, Ramnatthan Alagappan, Andrea Arpaci-Dusseau, Remzi Arpaci-Dusseau <a href='https://aishwaryaganesan.github.io/pdf/nilext.pdf' rel='nofollow'>Exploiting Nil-Externality of Fast Replicated Storage</a>. SOSP 2021.</li>
+   <li>Charapko, Aleksey, Ailidani Ailijiang, and Murat Demirbas. "Linearizable quorum reads in Paxos." In 11th USENIX Workshop on Hot Topics in Storage and File Systems (HotStorage 19). 2019.</li>
+    <li class = "nobullet"><i>Optional: </i> <ul>
+   <li>Moraru, Iulian, David G. Andersen, and Michael Kaminsky. "Paxos quorum leases: Fast reads without sacrificing writes." In Proceedings of the ACM Symposium on Cloud Computing, pp. 1-13. 2014.</li>
+ </ul>
+</li>
+</ul>
+
+<h3>Shared registers</h3>
+<ul>
+<li>H. Attiya, A. Bar-Noy, and D. Dolev. Sharing Memory Robustly in Message-Passing Systems. Journal of the ACM (JACM), 42(1):124–142, 1995.</li>
+</ul>
+
+<h3>Paxos optimizations (cont.)</h3>
+<ul>
+<li>Dan RK Ports, Jialin Li, Vincent Liu, Naveen Kr Sharma, and Arvind Krishnamurthy. <a href='papers/specpaxos-nsdi15.pdf' rel='nofollow'> Designing distributed systems using approximate synchrony in data center networks</a>. In 12th USENIX Symposium on Networked Systems Design and Implementation (NSDI 15). 2015.</li>
+<li>Seo Jin Park and John Ousterhout. 2019. Exploiting Commutativity For Practical Fast Replication. In Proceedings of the 16th Symposium on Networked Systems Design and Implementation (NSDI ’19).</li>
+<li>Manos Kapritsos, Yang Wang, Vivien Quema, Allen Clement, Lorenzo Alvisi, and Mike Dahlin. 2012. All About Eve: Execute-verify Replication for Multi-core Servers. In Proceedings of the 10th Symposium on Operating Systems Design and Implementation (OSDI ’12).</li>
+<li class = "nobullet"><i>Optional: </i> <ul>
+   <li>Leslie Lamport. 2005. Fast paxos. MSR-TR-2005-112.</li>
+   <li>Leslie Lamport. 2005. Generalized Consensus and Paxos. (2005).</li>
+ </ul>
+</li>
+</ul>
+
+
+<h3>Consensus in Practice</h3>
+<ul>
+<li>Bolosky, William J., Dexter Bradshaw, Randolph B. Haagens, Norbert P. Kusters, and Peng Li.  <a href='https://www.usenix.org/legacy/event/nsdi11/tech/full_papers/Bolosky.pdf'>Paxos Replicated State Machines as the Basis of a High-Performance Data Store.</a> NSDI 11. 2011.</li>
+<li>Tushar D Chandra, Robert Griesemer, and Joshua Redstone. Paxos Made Live: An Engineering Perspective. PODC 07.</li>
+ <li>Mike Burrows. <a href='papers/chubby-osdi06.pdf' rel='nofollow'>The Chubby Lock Service for Loosely-Coupled Distributed Systems</a>. OSDI 2006.</li>
+   <li class = "nobullet"><i>Optional: </i> <ul>
+     <li>Patrick Hunt, Mahadev Konar, Flavio Paiva Junqueira, and Benjamin Reed. <a href='papers/Hunt.pdf' rel='nofollow'>ZooKeeper: Wait-free Coordination for Internet-scale Systems.</a> In USENIX annual technical conference (ATC), 2010.</li>
+   </ul>
+</li>
+</ul>
+ 
+ <h3>Byzantine</h3>
+<ul>
+   <li>L. Lamport, R. Shostak, and M. Pease. <a href='papers/byzantine-generals.pdf' rel='nofollow'>The Byzantine Generals Problem</a>. ACM Transactions on Programming Languages and Systems, July 1982, pages 382-401.</li>
+  <li>Miguel Castro and Barbara Liskov. <a href='papers/osdi99.pdf' rel='nofollow'>Practical Byzantine Fault Tolerance</a>. OSDI, 1999.
+  <li class = "nobullet"><i>Optional: </i> <ul>
+    <li> Ramakrishna Kotla, Lorenzo Alvisi, Mike Dahlin, Allen Clement, and Edmund Wong. <a  href='papers/kotla07zyzzyva.pdf' rel='nofollow'>Zyzzyva: Speculative Byzantine Fault Tolerance</a>. SOSP 2007.</li>
+
+  </li></ul>
+</ul>
+
+<h3>Distributed transactions</h3>
+<ul>
+  <li>Butler Lampson, and David B. Lomet. <a href='papers/lampson-2pc.pdf' rel='nofollow'>A new presumed commit optimization for two phase commit</a>. VLDB. Vol. 93. 1993.</li>
+  <li>Corbett et al. <a href='papers/spanner-osdi2012.pdf' rel='nofollow'> Spanner: Google's Globally-Distributed Database</a>. OSDI 2012.</li>
+  <li> Irene Zhang, Naveen Kr. Sharma, Adriana Szekeres, Arvind Krishnamurthy, and Dan R. K. Ports. <a  href='papers/tapir-sosp15.pdf' rel='nofollow'>Building Consistent Transactions with Inconsistent Replication</a>. SOSP 2015.
+  <li>Adriana Szekeres, Michael Whittaker, Jialin Li, Naveen Kr Sharma, Arvind Krishnamurthy, Dan RK Ports, Irene Zhang. Meerkat: multicore-scalable replicated transactions following the zero-coordination principle.</li>
+</ul>
+
+<h3>Consistency models</h3>
+<ul>
+  <li>Douglas Terry. <a href='papers/baseball-13.pdf' rel='nofollow'>Replicated data consistency explained through baseball</a>. Communications of the ACM, Dec 2013. </li> 
+  <li>Eric Brewer.  <a href='papers/PODC-keynote.pdf' rel='nofollow'>CAP Theorem</a>. PODC Keynote, 2000.</li>
+  <li>Viotti, P. and Vukolić, M., 2016. Consistency in non-transactional distributed storage systems. ACM Computing Surveys (CSUR), 49(1), pp.1-34.</li>
+
+<li class = "nobullet"><b>Linearizability: </b> <ul>
+    <li>Maurice P. Herlihy, and Jeannette M. Wing. "Linearizability: A correctness condition for concurrent objects." ACM Transactions on Programming Languages and Systems (TOPLAS) 12, no. 3 (1990): 463-492.</li>
+  <li>Collin Lee, Seo Jin Park, Ankita Kejriwal, Satoshi Matsushita, and John Ousterhout. <a href='papers/rifl.pdf' rel='nofollow'>Implementing Linearizability at Large Scale and Low Latency</a>. In Proceedings of the 25th Symposium on Operating Systems Principles (SOSP), 2015.</li>
+</ul>
+</li>
+<li class = "nobullet"><b>Causal consistency: </b> <ul>
+    <li>Wyatt Lloyd, Michael J. Freedman, Michael Kaminsky, and David G. Andersen. <a href='papers/cops-sosp2011.pdf' rel='nofollow'>Don't settle for eventual: scalable causal consistency for wide-area storage with COPS</a>. In Proceedings of the Twenty-Third ACM Symposium on Operating Systems Principles (SOSP), 2011.</li>
+  <li>Syed Akbar Mehdi, Cody Littley, Natacha Crooks, Lorenzo Alvisi, Nathan Bronson, and Wyatt Lloyd. <a href='papers/occult.pdf' rel='nofollow'>I can't believe it's not causal! scalable causal consistency with no slowdown cascades</a>. In 14th USENIX Symposium on Networked Systems Design and Implementation (NSDI 17), 2017.</li>
+</ul>
+</li>
+<li class = "nobullet"><b>Eventual consistency: </b> <ul>
+  <li>Terry et al. <a href='papers/terry95managing.pdf' rel='nofollow'>Managing update conflicts in Bayou, a weakly connected replicated storage system</a>. SOSP, 1995.</li>
+    <li> Lu et al. <a href='papers/240-lu.pdf' rel='nofollow'>Existential consistency: measuring and understanding consistency at Facebook.</a> In Proceedings of the 25th Symposium on Operating Systems Principles (SOSP), 2015.</li>
+    <li>Giuseppe DeCandia, Deniz Hastorun, Madan Jampani, Gunavardhan Kakulapati, Avinash Lakshman, Alex Pilchin, Swami Sivasubramanian, Peter Vosshall and Werner Vogels. <a href='papers/amazon-dynamo-sosp2007.pdf' rel='nofollow'>Dynamo: Amazon's Highly Available Key-Value Store</a>. Proceedings of the 21st ACM Symposium on Operating Systems Principles, Stevenson, WA, October 2007 </li>
+
+  </ul>
+  </li>
+<li class = "nobullet"><b>Read your writes</b> <ul>
+  <li> Xiao Shi, Scott Pruett, Kevin Doherty, Jinyu Han, Dmitri
+Petrov, Jim Carrig, John Hugg, and Nathan Bronson.
+Flighttracker: Consistency across read-optimized online
+stores at facebook. </li>
+
+  </li></ul>
+</ul>
+
+<h3>Student presentations</h3>
+<h4>Geo-replication, Leaderless, Multi-threaded execution</h4>
+<ul>
+ <li>Iulian Moraru, David G. Andersen, and Michael Kaminsky. <a href='papers/epaxos.pdf' rel='nofollow'>There is more consensus in egalitarian parliaments.</a> In Proceedings of the Twenty-Fourth ACM Symposium on Operating Systems Principles (SOSP), 2013.</li>
+<li> Manos Kapritsos, Yang Wang, Vivien Quema, Allen Clement, Lorenzo Alvisi, and Mike Dahlin. 2012. All About Eve: Execute-verify Replication for Multi-core Servers. OSDI 12.</li>
+</ul>
+
+<h4>Shared logs</h4>
+<ul>
+<li>Joshua Lockerman, Jose M. Faleiro, Juno Kim, Soham Sankaran, Daniel J. Abadi, James Aspnes, Siddhartha Sen, and Mahesh Balakrishnan. 2018. The FuzzyLog: A Partially Ordered Shared Log. OSDI 18. </li>
+ <li>Mahesh Balakrishnan et al. <a href='https://www.usenix.org/system/files/osdi20-balakrishnan.pdf' rel='nofollow'>Virtual Consensus in Delos. OSDI 2020.</a></li>
+</ul>
+
+<h4>New hardware: RDMA + disaggregated memory</h4>
+<ul>
+<li>Marcos K Aguilera, Naama Ben-David, Rachid Guerraoui, Virendra J Marathe, Athanasios Xygkis, and Igor Zablotchi. Microsecond consensus for microsecond applications. OSDI 20. </li>
+ <li>Yang Zhou, Hassan M. G. Wassel, Sihang Liu, Jiaqi Gao, James Mickens, Minlan Yu, Chris Kennelly, Paul Turner, David E. Culler, Henry M. Levy, and Amin Vahdat. 2022. Carbink: Fault-Tolerant Far Memory. OSDI 22.</li>
+</ul>
+
+<h4>Distributed transactions for new hardware: Programmable switches and NICs</h4>
+<ul>
+<li>J. Li, E. Michael, and D. R. K. Ports. Eris: Coordination free consistent transactions using in-network concurrency control. SOSP 17. </li>
+ <li>Henry N. Schuh, Weihao Liang, Ming Liu, Jacob Nelson, and Arvind Krishnamurthy. 2021. Xenic: SmartNIC-Accelerated Distributed Transactions. SOSP 21.</li>
+</ul>
+
+<h4>Distributed FS for modern hardware</h4>
+<ul>
+<li>Thomas E. Anderson, Marco Canini, Jongyul Kim, Dejan Kostic, Youngjin Kwon, Simon Peter, Waleed Reda, Henry N. Schuh, and Emmett Witchel. Assise: Performance and Availability via Client-local NVM in a Distributed File System. OSDI 20. </li>
+ <li>YJongyul Kim, Insu Jang, Waleed Reda, Jaeseong Im, Marco Canini, Dejan Kostić, Youngjin Kwon, Simon Peter, Emmett Witchel. LineFS: Efficient SmartNIC Offload of a Distributed File System with Pipeline Parallelism. SOSP 21.</li>
+</ul>
+
+<h4>Virtual Machine Fault-Tolerance</h4>
+<ul>
+<li> Daniel J. Scales, Mike Nelson, and Ganesh Venkitachalam <a href='papers/vm-ft.pdf' rel='nofollow'>The Design of a Practical System for Fault-Tolerant Virtual Machines</a>. OSR 2010. </li>
+ <li>Brendan Cully, Geoffrey Lefebvre, Dutch Meyer, Mike Feeley, Norm Hutchinson, and Andrew Warfield. <a href='papers/cully.pdf' rel='nofollow'>Remus: High availability via asynchronous virtual machine replication</a>. In Proceedings of the 5th USENIX Symposium on Networked Systems Design and Implementation (NSDI), pp. 161-174. 2008.</li>
+</ul>
+
+<h4>Fault tolerance for in-memory computing</h4>
+<ul>
+<li>Matei Zaharia, Mosharaf Chowdhury, Tathagata Das, Ankur Dave, Justin Ma, Murphy McCauley, Michael J. Franklin, Scott Shenker, Ion Stoica. <a href='papers/Spark.pdf' rel='nofollow'>Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing</a>.  NSDI 2012. April 2012.</li>
+<li> Stephanie Wang, John Liagouris, and Robert Nishihara. 2019. Lineage stash: Fault tolerance off the critical path. SOSP 19.</li>
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+    </div>
+</section>
+  
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+    <script src="js/hugo-academic.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+    
+
+  </body>
+</html>
+
+
