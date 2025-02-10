@@ -112,7 +112,7 @@
 </ul>
 
 
-<h3>Paxos optimizations</h3>
+<h3>Paxos optimizations/variants</h3>
 <ul>
 <li><b>2/11:</b> Dan RK Ports, Jialin Li, Vincent Liu, Naveen Kr Sharma, and Arvind Krishnamurthy. <a href='papers/specpaxos-nsdi15.pdf' rel='nofollow'> Designing distributed systems using approximate synchrony in data center networks</a>. In 12th USENIX Symposium on Networked Systems Design and Implementation (NSDI 15). 2015.</li>
 <li><b>2/13:</b> Seo Jin Park and John Ousterhout. 2019. Exploiting Commutativity For Practical Fast Replication. In Proceedings of the 16th Symposium on Networked Systems Design and Implementation (NSDI ’19).</li>
@@ -123,6 +123,7 @@
    <li>Charapko, Aleksey, Ailidani Ailijiang, and Murat Demirbas. "Linearizable quorum reads in Paxos." In 11th USENIX Workshop on Hot Topics in Storage and File Systems (HotStorage 19). 2019.</li>
    <li>Moraru, Iulian, David G. Andersen, and Michael Kaminsky. "Paxos quorum leases: Fast reads without sacrificing writes." In Proceedings of the ACM Symposium on Cloud Computing, pp. 1-13. 2014.</li>
  <li>Manos Kapritsos, Yang Wang, Vivien Quema, Allen Clement, Lorenzo Alvisi, and Mike Dahlin. 2012. All About Eve: Execute-verify Replication for Multi-core Servers. In Proceedings of the 10th Symposium on Operating Systems Design and Implementation (OSDI ’12).</li>
+ <li>Iulian Moraru, David G. Andersen, and Michael Kaminsky. <a href='papers/epaxos.pdf' rel='nofollow'>There is more consensus in egalitarian parliaments.</a> In Proceedings of the Twenty-Fourth ACM Symposium on Operating Systems Principles (SOSP), 2013.</li>
  </ul>
 </li>
 </ul>
@@ -197,56 +198,60 @@ stores at facebook. </li>
 
   <li><b>4/1:</b> Mahesh Balakrishnan, Dahlia Malkhi, Vijayan Prabhakaran, Ted Wobber, Michael Wei, and John D. Davis. C.<a href='https://www.cs.yale.edu/homes/mahesh/papers/corfumain-final.pdf' rel='nofollow'>CORFU: A Shared Log Design for Flash Clusters</a></li>
   <li><b>4/1:</b> Cong Ding, David Chu, Evan Zhao, Xiang Li, Lorenzo Alvisi, and Robbert Van Renesse. <a href='https://www.usenix.org/system/files/nsdi20-paper-ding.pdf' rel='nofollow'>Scalog: Seamless Reconfiguration and Total Order in a Scalable Shared Log</a></li>
-   <li><b>4/3:</b> Mahesh Balakrishnan et al. <a href='https://www.usenix.org/system/files/osdi20-balakrishnan.pdf' rel='nofollow'>Virtual Consensus in Delos. OSDI 2020.</a></li>
+   
    <li class = "nobullet"><i>Optional: </i> <ul> 
-    <li>Joshua Lockerman, Jose M. Faleiro, Juno Kim, Soham Sankaran, Daniel J. Abadi, James Aspnes, Siddhartha Sen, and Mahesh Balakrishnan. 2018. The FuzzyLog: A Partially Ordered Shared Log. OSDI 18. </li> </ul>
+    <li>Joshua Lockerman, Jose M. Faleiro, Juno Kim, Soham Sankaran, Daniel J. Abadi, James Aspnes, Siddhartha Sen, and Mahesh Balakrishnan. 2018. The FuzzyLog: A Partially Ordered Shared Log. OSDI 18. </li> 
+  <li> Mahesh Balakrishnan et al. <a href='https://www.usenix.org/system/files/osdi20-balakrishnan.pdf' rel='nofollow'>Virtual Consensus in Delos. OSDI 2020.</a></li>
+</ul>
    </li>
 </ul>
 </li></ul>
 
 
 <h3>Student presentations</h3>
-<h4>Geo-replication, Leaderless, Multi-threaded execution</h4>
-<ul>
- <li>Iulian Moraru, David G. Andersen, and Michael Kaminsky. <a href='papers/epaxos.pdf' rel='nofollow'>There is more consensus in egalitarian parliaments.</a> In Proceedings of the Twenty-Fourth ACM Symposium on Operating Systems Principles (SOSP), 2013.</li>
-<li> Manos Kapritsos, Yang Wang, Vivien Quema, Allen Clement, Lorenzo Alvisi, and Mike Dahlin. 2012. All About Eve: Execute-verify Replication for Multi-core Servers. OSDI 12.</li>
-</ul>
-
-<h4>Shared logs</h4>
-<ul>
 
 
-</ul>
-
-<h4>New hardware: RDMA + disaggregated memory</h4>
+<h4>New hardware: RDMA, disaggregated memory</h4>
 <ul>
 <li>Marcos K Aguilera, Naama Ben-David, Rachid Guerraoui, Virendra J Marathe, Athanasios Xygkis, and Igor Zablotchi. Microsecond consensus for microsecond applications. OSDI 20. </li>
  <li>Yang Zhou, Hassan M. G. Wassel, Sihang Liu, Jiaqi Gao, James Mickens, Minlan Yu, Chris Kennelly, Paul Turner, David E. Culler, Henry M. Levy, and Amin Vahdat. 2022. Carbink: Fault-Tolerant Far Memory. OSDI 22.</li>
 </ul>
 
-<h4>Distributed transactions for new hardware: Programmable switches and NICs</h4>
+ <li class = "nobullet"><i>Optional: </i> <ul> 
 <ul>
 <li>J. Li, E. Michael, and D. R. K. Ports. Eris: Coordination free consistent transactions using in-network concurrency control. SOSP 17. </li>
  <li>Henry N. Schuh, Weihao Liang, Ming Liu, Jacob Nelson, and Arvind Krishnamurthy. 2021. Xenic: SmartNIC-Accelerated Distributed Transactions. SOSP 21.</li>
-</ul>
-
-<h4>Distributed FS for modern hardware</h4>
-<ul>
 <li>Thomas E. Anderson, Marco Canini, Jongyul Kim, Dejan Kostic, Youngjin Kwon, Simon Peter, Waleed Reda, Henry N. Schuh, and Emmett Witchel. Assise: Performance and Availability via Client-local NVM in a Distributed File System. OSDI 20. </li>
  <li>YJongyul Kim, Insu Jang, Waleed Reda, Jaeseong Im, Marco Canini, Dejan Kostić, Youngjin Kwon, Simon Peter, Emmett Witchel. LineFS: Efficient SmartNIC Offload of a Distributed File System with Pipeline Parallelism. SOSP 21.</li>
 </ul>
+</li>
+</ul>
+</li></ul>
 
 <h4>Virtual Machine Fault-Tolerance</h4>
 <ul>
-<li> Daniel J. Scales, Mike Nelson, and Ganesh Venkitachalam <a href='papers/vm-ft.pdf' rel='nofollow'>The Design of a Practical System for Fault-Tolerant Virtual Machines</a>. OSR 2010. </li>
- <li>Brendan Cully, Geoffrey Lefebvre, Dutch Meyer, Mike Feeley, Norm Hutchinson, and Andrew Warfield. <a href='papers/cully.pdf' rel='nofollow'>Remus: High availability via asynchronous virtual machine replication</a>. In Proceedings of the 5th USENIX Symposium on Networked Systems Design and Implementation (NSDI), pp. 161-174. 2008.</li>
+<li>  <b>4/10:</b> Daniel J. Scales, Mike Nelson, and Ganesh Venkitachalam <a href='papers/vm-ft.pdf' rel='nofollow'>The Design of a Practical System for Fault-Tolerant Virtual Machines</a>. OSR 2010. </li>
+ <li> <b>4/10:</b> Brendan Cully, Geoffrey Lefebvre, Dutch Meyer, Mike Feeley, Norm Hutchinson, and Andrew Warfield. <a href='papers/cully.pdf' rel='nofollow'>Remus: High availability via asynchronous virtual machine replication</a>. In Proceedings of the 5th USENIX Symposium on Networked Systems Design and Implementation (NSDI), pp. 161-174. 2008.</li>
 </ul>
 
-<h4>Fault tolerance for in-memory computing</h4>
-<ul>
-<li>Matei Zaharia, Mosharaf Chowdhury, Tathagata Das, Ankur Dave, Justin Ma, Murphy McCauley, Michael J. Franklin, Scott Shenker, Ion Stoica. <a href='papers/Spark.pdf' rel='nofollow'>Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing</a>.  NSDI 2012. April 2012.</li>
-<li> Stephanie Wang, John Liagouris, and Robert Nishihara. 2019. Lineage stash: Fault tolerance off the critical path. SOSP 19.</li>
 
+<h4>Fault-tolerant computing</h4>
+<ul>
+<li> <b>4/15:</b> Stephanie Wang, John Liagouris, and Robert Nishihara. 2019. Lineage stash: Fault tolerance off the critical path. SOSP 19.</li>
+<li><b>4/15:</b> Li et al. <a href='https://dl.acm.org/doi/abs/10.1145/3589262' rel='nofollow'>DARQ Matter Binds Everything: Performant and Composable Cloud Programming via Resilient Steps</a>.  SIGMOD 23.</li>
+<li><b>4/22:</b> Haoran Zhang, Adney Cardoza, Peter Baile Chen, Sebastian Angel, and
+Vincent Liu. 2020. <a href='https://www.usenix.org/conference/osdi20/presentation/zhang-haoran' rel='nofollow'>Fault-tolerant and transactional stateful serverless workflows.</a> In 14th USENIX Symposium on Operating Systems Design
+and Implementation (OSDI 20). USENIX Association, 1187–1204. .</li>
+<li> <b>4/22:</b> Jia et al. <a href='https://www.cs.utexas.edu/~witchel/pubs/jia21sosp-boki.pdf' rel='nofollow'>Boki: Towards Data Consistency and Fault Tolerance with Shared Logs in Stateful Serverless Computing</a>.  SOSP 21.</li>
+
+</ul>
+
+<h4>Fault-tolerant Training</h4>
+<ul>
+<li> <b>4/24:</b> Eisenman et al. <a href='https://dl.acm.org/doi/pdf/10.1145/3600006.3613145' rel='nofollow'>Check-N-Run: a Checkpointing System for Training Deep Learning Recommendation Models.</a> NSDI 22.</li>
+<li>  <b>4/24:</b> Wang et al. <a href='https://dl.acm.org/doi/pdf/10.1145/3600006.3613145' rel='nofollow'>Gemini: Fast Failure Recovery in Distributed Training with In-Memory Checkpoints. </a> SOSP 23.</li>
+<li>  <b>4/29:</b> Jang et al. <a href='https://dl.acm.org/doi/10.1145/3600006.3613152' rel='nofollow'>Oobleck: Resilient Distributed Training of Large Models Using Pipeline Templates. </a> SOSP 23.</li>
+<li>  <b>4/29:</b> Gandhi et al. <a href='https://dl.acm.org/doi/pdf/10.1145/3694715.3695960' rel='nofollow'>ReCycle: Resilient Training of Large DNNs using Pipeline Adaptation. </a> SOSP 24.</li>
 </ul>
 
       </div>
